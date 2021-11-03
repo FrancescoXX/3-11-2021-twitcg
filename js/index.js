@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.post('users', async (req,res) =>{
+app.post('/users', async (req,res) =>{
   try {
     const user = await User.create({
       username: req.body.username,

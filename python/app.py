@@ -25,7 +25,7 @@ def get():
   return "ok"
 
 # Create Item
-@app.route('items', methods=['POST'])
+@app.route('/items', methods=['POST'])
 def itemadd():
   request_data = request.get_json()
 
